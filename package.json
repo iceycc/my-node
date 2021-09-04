@@ -1,0 +1,35 @@
+{
+  "name": "1.rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "dev:promise": "rollup -c promise.rollup.config.js -w",
+    "test": "promises-aplus-tests 1.promise/promise.js",
+    "test1": "promises-aplus-tests 1.promise/promise1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "rollup": "^2.55.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@types/node": "^16.4.11",
+    "commander": "^8.1.0",
+    "express": "^4.17.1",
+    "iconv-lite": "^0.6.3",
+    "jwt-simple": "^0.5.6",
+    "koa": "^2.13.1",
+    "methods": "^1.1.2",
+    "mime": "^2.5.2",
+    "path-to-regexp": "^6.2.0",
+    "promises-aplus-tests": "^2.1.2",
+    "uuid": "^8.3.2"
+  }
+}

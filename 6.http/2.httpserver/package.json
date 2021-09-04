@@ -1,0 +1,22 @@
+{
+  "name": "i-hs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "/bin/www",
+  "scripts": {
+    "dev": "i-hs -d public --port 3000",
+    "cache1": "nodemon 1.cache.强制缓存.js",
+    "cache2": "nodemon 2.cache.协商缓存.modify.js",
+    "cache3": "nodemon 3.cache.协商缓存.etag.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "ejs": "^3.1.6",
+    "mime": "^2.5.2"
+  }
+}

@@ -1,0 +1,8 @@
+<script>
+    let channel = new MessageChannel()
+    channel.port1.postMessage('333')
+
+    channel.port2.onmessage = function (e){
+        console.log(e.data)
+    }
+</script>

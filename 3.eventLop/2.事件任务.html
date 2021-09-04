@@ -1,0 +1,21 @@
+<body>
+<button id="button">点我</button>
+<script>
+    button.addEventListener('click', () => { // 宏任务
+        console.log('listener1');
+        Promise.resolve().then(() => console.log('micro task1'))
+    })
+    button.addEventListener('click', () => {
+        console.log('listener2');
+        Promise.resolve().then(() => console.log('micro task2'))
+    })
+    // 宏任务是一个个取出来
+    // 点击按钮的执行顺序？
+    // 1122
+
+    // 代码自动点击的执行顺序？为什么？
+    // 直接在当前的执行栈中执行，不会产生事件监听线程。
+    // 1212
+    button.click(); // click1() click2();
+</script>
+</body>

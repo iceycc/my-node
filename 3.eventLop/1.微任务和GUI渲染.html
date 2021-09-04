@@ -1,0 +1,21 @@
+<body>
+
+<script>
+    document.body.style.background = 'red';
+    console.log(1)
+
+    Promise.resolve().then(() =>{
+        console.log(2)
+        document.body.style.background = 'yellow';
+    })
+    // setTimeout(() => {
+    //     console.log(2)
+    //     document.body.style.background = 'yellow';
+    // })
+    console.log(3);
+    // 页面会由红色变为黄色 ？如果换成setTimeout呢？
+    // 执行log 逻辑是 1 2 3 吗？
+
+
+</script>
+</body>
